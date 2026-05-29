@@ -36,12 +36,17 @@ const Hero: React.FC = () => {
           Experience the ultimate financial control. Business Ledger provides a premium 
           interface to track every penny and grow your enterprise with gold-standard insights.
         </p>
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem' }}>
-          <a href="#download" className="btn btn-primary" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '1.1rem' }}>
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'center', 
+          gap: '1.25rem',
+          flexWrap: 'wrap'
+        }}>
+          <a href="#download" className="btn btn-primary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', fontSize: '1.1rem' }}>
             Get Started Free <ChevronRight size={22} />
           </a>
-          <a href="#how-it-works" className="btn btn-outline" style={{ fontSize: '1.1rem' }}>
-            See How it Works
+          <a href="#how-it-works" className="btn btn-outline" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.1rem' }}>
+            How it Works
           </a>
         </div>
       </div>
