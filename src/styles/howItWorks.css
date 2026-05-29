@@ -1,0 +1,114 @@
+.how-it-works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.step-card {
+  background: var(--surface);
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--border);
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.step-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(251, 191, 36, 0.05);
+}
+
+.animation-container {
+  height: 220px;
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(251, 191, 36, 0.1);
+}
+
+/* Step 1: Add Entry Animation */
+.ledger-row {
+  width: 85%;
+  height: 45px;
+  background: var(--surface);
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  position: absolute;
+  left: 7.5%;
+  opacity: 0;
+  animation: slideInRow 3s infinite;
+  box-shadow: 0 0 15px rgba(251, 191, 36, 0.1);
+}
+
+.ledger-cell {
+  height: 12px;
+  background: rgba(251, 191, 36, 0.2);
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+@keyframes slideInRow {
+  0% { transform: translateY(50px); opacity: 0; }
+  20% { transform: translateY(0); opacity: 1; }
+  80% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-50px); opacity: 0; }
+}
+
+/* Step 2: Categorize Animation */
+.tag-container {
+  display: flex;
+  gap: 8px;
+}
+
+.tag {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  opacity: 0;
+  animation: popTag 3s infinite;
+}
+
+.tag-blue { background: var(--primary); animation-delay: 0.5s; }
+.tag-green { background: var(--secondary); animation-delay: 1s; }
+.tag-purple { background: var(--accent); animation-delay: 1.5s; }
+
+@keyframes popTag {
+  0%, 100% { transform: scale(0); opacity: 0; }
+  20%, 80% { transform: scale(1); opacity: 1; }
+}
+
+/* Step 3: Reports Animation */
+.chart-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  height: 100px;
+}
+
+.bar {
+  width: 20px;
+  background: var(--primary);
+  border-radius: 4px 4px 0 0;
+  animation: growBar 3s infinite ease-out;
+  transform-origin: bottom;
+}
+
+@keyframes growBar {
+  0% { transform: scaleY(0.1); }
+  50% { transform: scaleY(1); }
+  100% { transform: scaleY(0.1); }
+}
