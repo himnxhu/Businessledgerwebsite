@@ -31,7 +31,7 @@ const DownloadSection: React.FC = () => {
             <Smartphone size={56} color="var(--primary)" style={{ marginBottom: '1.5rem' }} />
             <h3 style={{ marginBottom: '0.75rem' }}>Android App</h3>
             <p style={{ color: 'var(--text-light)', marginBottom: '2rem' }}>Download direct APK for Android</p>
-            <a href="#" className="btn btn-primary" style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem' }}>
+            <a href="/Business_Ledger_1.0.apk" download className="btn btn-primary" style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem' }}>
               <Download size={20} /> Download APK
             </a>
           </div>
@@ -47,10 +47,10 @@ const DownloadSection: React.FC = () => {
           }} onMouseOver={(e) => e.currentTarget.style.borderColor = 'var(--primary)'} onMouseOut={(e) => e.currentTarget.style.borderColor = 'var(--border)'}>
             <Smartphone size={56} color="var(--primary)" style={{ marginBottom: '1.5rem' }} />
             <h3 style={{ marginBottom: '0.75rem' }}>iOS App</h3>
-            <p style={{ color: 'var(--text-light)', marginBottom: '2rem' }}>Get Business Ledger for iPhone</p>
-            <a href="#" className="btn btn-outline" style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem' }}>
-              <Download size={20} /> Get for iOS
-            </a>
+            <p style={{ color: 'var(--text-light)', marginBottom: '2rem' }}>Coming soon to the Apple App Store</p>
+            <button className="btn btn-outline" style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', opacity: 0.6, cursor: 'not-allowed' }}>
+              <Download size={20} /> Notify Me
+            </button>
           </div>
         </div>
       </div>
