@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
     <section className="hero reveal" style={{
       textAlign: 'center',
       padding: '12rem 0 10rem',
-      background: 'radial-gradient(circle at 50% -20%, rgba(251, 191, 36, 0.15) 0%, transparent 50%)',
+      background: 'radial-gradient(circle at 50% -20%, rgba(208, 188, 255, 0.12) 0%, transparent 50%)',
       position: 'relative',
       overflow: 'hidden'
     }}>
@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
         transform: 'translateX(-50%)',
         width: '800px',
         height: '400px',
-        background: 'rgba(251, 191, 36, 0.08)',
+        background: 'rgba(208, 188, 255, 0.08)',
         filter: 'blur(120px)',
         borderRadius: '50%',
         zIndex: 0,
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
           fontWeight: 500
         }}>
           Experience the ultimate financial control. Business Ledger provides a premium 
-          interface to track every penny and grow your enterprise with gold-standard insights.
+          interface to track every penny and grow your enterprise with elegant insights.
         </p>
         <div style={{ 
           display: 'flex', 

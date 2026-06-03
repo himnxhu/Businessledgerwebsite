@@ -6,11 +6,9 @@
 }
 
 .step-card {
-  background: var(--surface);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: var(--card-gradient);
   padding: 3.5rem 2.5rem;
-  border-radius: 2.5rem;
+  border-radius: 20px;
   border: 1px solid var(--border);
   text-align: center;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -21,8 +19,7 @@
 .step-card:hover {
   transform: translateY(-12px);
   border-color: var(--primary);
-  background: rgba(30, 41, 59, 0.7);
-  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 30px 60px -20px rgba(208, 188, 255, 0.3);
 }
 
 .animation-container {
@@ -42,7 +39,7 @@
 .ledger-row {
   width: 80%;
   height: 50px;
-  background: rgba(30, 41, 59, 0.8);
+  background: rgba(43, 41, 48, 0.8);
   border: 1.5px solid var(--primary);
   border-radius: 12px;
   display: flex;
@@ -52,12 +49,12 @@
   left: 10%;
   opacity: 0;
   animation: slideInRow 4s infinite cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 0 20px rgba(251, 191, 36, 0.15);
+  box-shadow: 0 0 20px rgba(208, 188, 255, 0.2);
 }
 
 .ledger-cell {
   height: 14px;
-  background: var(--gold-gradient);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
   border-radius: 6px;
   margin-right: 14px;
 }
@@ -80,10 +77,10 @@
   border-radius: 20px;
   font-size: 11px;
   font-weight: 800;
-  color: #000;
+  color: var(--on-primary);
   opacity: 0;
   animation: popTag 4s infinite cubic-bezier(0.4, 0, 0.2, 1);
-  background: var(--gold-gradient);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
 }
 
 .tag:nth-child(1) { animation-delay: 0.5s; }
@@ -105,7 +102,7 @@
 
 .bar {
   width: 24px;
-  background: var(--gold-gradient);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
   border-radius: 6px 6px 0 0;
   animation: growBar 4s infinite cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: bottom;

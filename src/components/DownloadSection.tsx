@@ -22,7 +22,7 @@ const DownloadSection: React.FC = () => {
           {/* Android App */}
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ 
-              background: 'rgba(251, 191, 36, 0.1)', 
+              background: 'rgba(208, 188, 255, 0.15)', 
               width: '100px', 
               height: '100px', 
               borderRadius: '2rem', 
@@ -31,7 +31,7 @@ const DownloadSection: React.FC = () => {
               justifyContent: 'center',
               margin: '0 auto 2.5rem',
               color: 'var(--primary)',
-              boxShadow: '0 0 30px rgba(251, 191, 36, 0.1)'
+              boxShadow: '0 0 30px rgba(208, 188, 255, 0.2)'
             }}>
               <Smartphone size={48} />
             </div>
